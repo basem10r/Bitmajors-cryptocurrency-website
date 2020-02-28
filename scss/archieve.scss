@@ -1,0 +1,18 @@
+.archieve
+{
+	.icons
+	{
+		i 
+		{
+			opacity: 0.6;
+			margin-right: 5px;
+			cursor: pointer;
+			&:hover,&:focus
+			{
+				opacity: 1;
+				@include transition();
+			}
+
+		}
+	}
+}

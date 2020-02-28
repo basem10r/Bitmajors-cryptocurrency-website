@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> BitMajors </title>
+    <!--     <link rel="stylesheet" href="css/font-awesome.min.css">
+ -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/coinicon.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href=" css/owl.theme.default.min.css">
+    <link rel="stylesheet" href=" css/zebra_accordion.min.css">
+    <link rel="stylesheet" href="css/metisMenu.css">
+    <link rel="stylesheet" href=" css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="dashboard">
+    <header class="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="default"><i class="fa fa-bars"></i></button>
+                    <a class="navbar-brand" href="#"><img class="img-responsive " src="images/logo1.png"></a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="navbar-form" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <!-- The Profile picture inserted via div class below, with shaping provided by Bootstrap -->
+                            <div class="img"><img class="img-circle img-responsive" src="images/3.jpg"></div>
+                            <span class="name">Basem mohamed</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="logout" href="#">Log out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--     <div class="container-fluid">
+ -->
+    <aside>
+        <nav class="sidenav main">
+            <div class="logo">
+                <a href="index.html"><img class="center-block img-responsive" src="images/logo.png"></a>
+                <a href="index.html"><img class="center-block img-responsive logo-icon" src="images/logo1.png"></a>
+                </div>
+                <ul class="list-group">
+                    <li class="dropdown text-center">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <!-- The Profile picture inserted via div class below, with shaping provided by Bootstrap -->
+                            <div class="img"><img class="img-circle img-responsive" src="images/3.jpg"></div>
+                            <span class="name">Basem mohamed <span class="caret"></span></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="logout" href="#">Log out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <ul class="icons text-center">
+                        <li class="not"><a href="#"><i class="fas fa-bell"></i></a></li>
+                        <li class="not"><a href="#"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                    <li class="list-group-item">
+                        <i class="fas fa-suitcase"></i><a href="dashboard.html"> Wallet</a></li>
+                    <li class="list-group-item">
+                        <i class="fas fa-chart-line"></i><a href="transactions.html"> Transactions <span class="arrow"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-dollar-sign "></i><a href="contracts.html"> Contracts <span class="arrow"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-question "></i><a href="support.html"> Support <span class="arrow"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-cog"></i><a href="settings.html"> Settings
+          </a>
+                    </li>
+                    
+                </ul>
+        </nav>
+    </aside>
+    <!-- start main section  -->
+    <main>
+        <div class="content">
+            <!-- start tables section  -->
+            <section class="tabs tabs1">
+                <h1>Settings</h1>
+                <div class="container-fluid">
+                    <ul class="nav nav-tabs text-center">
+                        <li class="active"><a data-toggle="tab" href="#home">Profile</a></li>
+                        <li><a data-toggle="tab" href="#menu1">Wallets</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="camera">
+                                            <div class="circle text-center">
+                                                <i class="fas fa-camera fa-lg"></i>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <h4>load photo</h4>
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="button">
+                                           <button class="btn btn-success btn-lg">upload</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="desc">
+                                            <h4>Change Password</h4>
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="button">
+                                           <button class="btn btn-success btn-lg" data-remodal-target="modal1">Change Password</button>
+                                        </div>
+                                        <div class="remodal" data-remodal-id="modal1">
+                                            <button data-remodal-action="close" class="remodal-close"></button>
+                                            <div class="circle text-center">
+                                                <i class="fas fa-camera"></i>
+                                            </div>
+                                            <h2>Change Password</h2>
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label>Old Password</label>
+                                                    <input class="form-control input-lg" type="password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>New Password</label>
+                                                    <input class="form-control input-lg" type="password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Confirm New Password</label>
+                                                    <input class="form-control input-lg" type="password">
+                                                </div>
+                                        </form>
+                                        <button class="btn btn-default btn-lg text-center " data-remodal-action="confirm">Submit</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form3">
+                                    <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>User Name</label>
+                                        <input type="text" class="form-control input-lg"  placeholder="Name">
+                                      </div>
+                                      <div class="form-group">
+                                        <label>Date Of Birth</label>
+                                        <br>
+                                        <div class="dropdown btn-group">
+                                        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Day
+                                        <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#">BTC</a></li>
+                                          <li><a href="#">ETH</a></li>
+                                          <li><a href="#">LTC</a></li>
+                                        </ul>
+                                      </div>
+                                      <div class="dropdown btn-group">
+                                        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Month
+                                        <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#">BTC</a></li>
+                                          <li><a href="#">ETH</a></li>
+                                          <li><a href="#">LTC</a></li>
+                                        </ul>
+                                      </div>
+                                      <div class="dropdown btn-group">
+                                        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Year
+                                        <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#">BTC</a></li>
+                                          <li><a href="#">ETH</a></li>
+                                          <li><a href="#">LTC</a></li>
+                                        </ul>
+                                      </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label>Country</label>
+                                        <div class="dropdown">
+                                        <button class="btn btn-primary btn-block btn-lg dropdown-toggle" type="button" data-toggle="dropdown">United Kingdom
+                                        <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                          <li><a href="#">BTC</a></li>
+                                          <li><a href="#">ETH</a></li>
+                                          <li><a href="#">LTC</a></li>
+                                        </ul>
+                                      </div>
+                                      </div>
+                                      <div class="button">
+                                    <button class="btn btn-success btn-lg">Save Settings</button>
+                                </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="Email" class="form-control input-lg"  placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label>Select Currency</label>
+                                                <div class="dropdown">
+                                                <button class="btn btn-primary btn-lg btn-block dropdown-toggle" type="button" data-toggle="dropdown">BTC
+                                                <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="#">BTC</a></li>
+                                                  <li><a href="#">ETH</a></li>
+                                                  <li><a href="#">LTC</a></li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="form-group">
+                                            <label>Address</label>
+                                            <input type="Email" class="form-control input-lg"  placeholder="Address">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label>Language</label>
+                                                <div class="dropdown">
+                                                <button class="btn btn-primary btn-block btn-lg dropdown-toggle" type="button" data-toggle="dropdown">BTC
+                                                <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="#">BTC</a></li>
+                                                  <li><a href="#">ETH</a></li>
+                                                  <li><a href="#">LTC</a></li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="form-group">
+                                                <label>Select City</label>
+                                                <div class="dropdown">
+                                                <button class="btn btn-primary btn-lg btn-block dropdown-toggle" type="button" data-toggle="dropdown">BTC
+                                                <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                  <li><a href="#">BTC</a></li>
+                                                  <li><a href="#">ETH</a></li>
+                                                  <li><a href="#">LTC</a></li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                            <label>Postcode</label>
+                                            <input type="Email" class="form-control input-lg"  placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                        <section class="wallets">
+                    <div class="container-fluid">
+                        <div class="table1">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="check"><input type="checkbox"></td>
+                                        <td class="text-center"><div class="coin"><i class="ci ci-btc"></i></div></td>
+                                        <td class="desc"><span>3Bhe5sbhSTNxcDpYyyWkyN76YReDs8wFv8</span></td>
+                                        <td class="desc"><span>12 BTC</span></td>
+                                        <td class="desc"><span>$500.00 USD</span></td>
+                                        <td class="garpage"><i class="fas fa-trash"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="check"><input type="checkbox"></td>
+                                        <td class="text-center"><div class="coin ethereum"><i class="ci ci-eth"></i></div></td>
+                                        <td class="desc"><span>3Bhe5sbhSTNxcDpYyyWkyN76YReDs8wFv8</span></td>
+                                        <td class="desc"><span>12 ETH</span></td>
+                                        <td class="desc"><span>$500.00 USD</span></td>
+                                        <td class="garpage"><i class="fas fa-trash"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="check"><input type="checkbox"></td>
+                                        <td class="text-center"><div class="coin litecoin"><i class="ci ci-ltc"></i></div></td>
+                                        <td class="desc"><span>3Bhe5sbhSTNxcDpYyyWkyN76YReDs8wFv8</span></td>
+                                        <td class="desc"><span>12 LTC</span></td>
+                                        <td class="desc"><span>$500.00 USD</span></td>
+                                        <td class="garpage"><i class="fas fa-trash"></i></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <div class="buttons">
+                                <button class="btn btn-success btn-lg">Save Changes</button>
+                                <button class="btn btn-primary btn-lg">Edit Wallets</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                        </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/metisMenu.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/zebra_accordion.min.js"></script>
+    <script src="js/zebra_accordion.src.js"></script>
+    <script src="js/remodal.min.js"></script>
+
+</body>
+
+</html>

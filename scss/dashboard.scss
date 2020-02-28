@@ -1,0 +1,837 @@
+@import "transaction";
+.remodal 
+{
+	background: $small !important;
+	color: $white !important;
+	max-width: 500px !important;
+	.inline 
+	{
+		input 
+		{
+			display:inline;
+			color:$white;
+		}
+	}
+	.my-form
+	{
+		.my-input,.dropdown
+		{
+			display:inline-block;
+		}
+		.my-input
+		{
+			width:70%;
+			color:$white;
+		}
+		
+	}
+	.amount
+	{
+		.box 
+		{
+			padding:20px 30px;
+			background-color:$medium;
+			color:$aqua;
+			font-size:2em;
+			border-radius:5px;
+		}
+	}
+	.form-group
+	{
+		margin-top: 30px;
+		color: $white !important;
+		input 
+		{
+			background-color: $medium;
+			border: 0;
+			color: $white;
+			&:hover,&:focus
+			{
+				outline: none;
+				box-shadow: none;
+			}
+		}
+		label
+		{
+			float: left;
+		}
+		.btn-primary
+		{
+			background-color: $medium;
+			border: 0;
+			&:hover,&:focus
+			{
+				background: $large;
+				color: $white;
+				outline: none;
+				box-shadow: none;
+			}
+
+		}
+	}
+	.btn-default
+	{
+		@include lineargradient();
+		border: 0;
+		color: $white;
+		margin-top: 30px;
+		border-radius: 25px;
+		&:focus,&:hover
+		{
+			@include lineargradient1();
+			outline: none;
+			box-shadow: none;
+		}
+	}
+	.circle
+	{
+		background: $large;
+		width: 90px;
+		height: 90px;
+		line-height: 90px;
+		color: $aqua;
+		border-radius: 50%;
+		text-align: center;
+		font-size: 1.8em;
+		margin: 0 auto;
+		border: 2px dashed $aqua;
+	}
+	.group
+	{
+		display:inline-block;
+	}
+}
+.remodal-overlay
+{
+	background: rgba($large,0.6) !important;
+}
+#dashboard
+{
+	color: $white;
+main 
+{
+	width: 100%;
+	margin-top: 100px;
+	display: inline-block;
+	h1,h2,h3
+	{
+		text-align: center;
+	}
+	.content
+	{
+		padding-left: 180px;
+		@include transition();
+		@media #{$maxSmall}
+		{
+			padding-left: 100px;
+		}
+		@media #{$maxmobile}
+		{
+			padding-left: 0px;
+		}
+	}
+}
+.navbar-nav>li>.dropdown-menu
+{
+	background-color: $small;
+	box-shadow: none;
+	border:0;
+	margin-right: 50px;
+	margin-top: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	z-index: 6;
+	@include transition();
+
+}
+	.navbar-default
+	{
+		padding-top: 20px;
+		height: 90px;
+		background-color: $large;
+		border-bottom: 0;
+		z-index: 5;
+		@include transition();
+		@media #{$maxmobile}
+		{
+			padding-top: 0;
+			height: 80px;
+		}
+		.navbar-header
+		{
+			margin-top: 0;
+			@media #{$minSmall}
+			{
+				display: none;
+			}
+			.default
+			{
+				background-color: transparent;
+				border: 0;
+				color: $white;
+				float: right;
+				font-size: 2.3em;
+				margin-right: 20px;
+				margin-top: 10px;
+				&:focus
+				{
+					outline: none;
+					box-shadow: none;
+				}
+			}
+			.navbar-brand
+			{
+				height: 80px;
+				width: 80px;
+				margin-left: 20px;
+
+			}
+		}
+		.navbar-nav
+		{
+			@media #{$maxmobile}
+			{
+				display: none;
+			}
+		}
+		.dropdown-menu>li>a
+		{
+			text-align: center;
+			color: $white;
+			border:0;
+			margin-right: 0;
+			.logout
+			{
+				color: $aqua;
+			}
+			&:hover
+			{
+				color: $aqua;
+				background-color: transparent;
+				@include transition();
+			}
+
+		}
+		ul 
+		{
+
+			li 
+			{
+				
+				a
+				{
+					margin-right: 20px;
+					color: $white;
+					font-size: 1.1em;
+					i 
+					{
+						font-size: 1.2em;
+					}
+					i::after 
+					{
+						content: '';
+						position: absolute;
+						height: 13px;
+						width: 13px;
+						left: 25px;
+						top: 9px;
+						background-color: $aqua;
+						border-radius: 50%;
+						border: 2px solid $medium;
+					}
+				}
+				a.dropdown-toggle
+				{
+					padding: 0;
+					.open
+					{
+						background-color: transparent;
+					}
+				}
+
+				
+			}
+		}
+		form 
+		{
+			.form-group
+			{
+				background-color: $small;
+				border-radius: 25px;
+				height: 40px;
+				line-height: 40px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			input 
+			{
+				background-color: $small;
+				border:0;
+				border-style: none;
+				border-radius: 25px;
+				width: 300px;
+				margin: 0;
+				box-shadow: none;
+				color: $white;
+				&:focus 
+				{
+					box-shadow: none;
+				}
+
+
+			}
+			button
+			{
+				margin: 0;
+				background: transparent;
+				border: 0;
+				color: $aqua;
+
+			}
+		}
+		.img 
+		{
+			display: inline-block;
+			img 
+			{
+				padding-top: 0;
+				height: 50px;
+				width: 50px;
+				line-height: 50px;
+				display: inline-block;
+			}
+		}
+		.name 
+		{
+			display: inline-block;
+			margin-left: 10px;
+		}
+		.open>a
+		{
+			background: transparent;
+		}
+		
+	}
+
+	.toggle-btn 
+	{
+		position: fixed;
+		top: 0px;
+		left: 250px;
+		height: 90px;
+		line-height: 90px;
+		width: 80px;
+		z-index: 2;
+		color: $aqua;
+		font-size: 2.5em;
+		text-align: center;
+		border:0;
+		background-color: transparent;
+		@include transition();
+		&:focus
+		{
+			border:0;
+			box-shadow: none;
+			outline: none;
+		}
+
+	}
+
+	.sidenav
+	{
+		position: fixed;
+		top: 0;
+		left:  0px;
+		width: 180px;
+		height: 100%;
+		z-index: 6;
+		background-color: $large;
+
+		@include transition();
+		display: inline-block;
+		@media #{$maxSmall} {
+            width: 100px;
+        }
+        @media #{$maxmobile} {
+        	display: none;
+        }
+        .icons
+        {
+        	display: none;
+        	@media #{$maxmobile}
+        	{
+        		display: block;
+        		list-style-type: none;
+        		margin-right: 20px;
+        		margin-bottom: 20px;
+          		.not
+          		{
+          			display: inline-block;
+          			a 
+          			{
+          				color: $white;
+          				text-decoration: none;
+          				margin-right: 10px;
+          			}
+          		}
+        	}
+        	
+        }
+		.main
+		{
+			left:-250px;
+		}
+		.logo
+		{
+			@include lineargradient();
+			padding: 20px 20px 10px 20px;
+			height: 90px;
+			.logo-icon
+			{
+				display: none;
+			}
+				@media #{$maxmobile}
+			{
+				.logo
+				{
+					height: 70px;
+				}
+				.logo-icon
+				{
+					width: 50px;
+					height: 50px;
+				}
+
+
+			}
+			@media #{$maxSmall} {
+				img{
+					display: none;
+				}
+				.logo-icon
+				{
+					display: inline-block;
+					margin-left: 5px;
+				}
+
+			}
+
+		} 
+		
+
+		.list-group
+		{
+			padding-top: 20px;
+			// margin-top: 32px;
+			@media #{$minmobile}
+			{
+				margin-top: 32px;
+			}
+			
+			.list-group-item
+			{
+				background-color: transparent;
+				height: 50px;
+				line-height: 30px;
+				border: 0;
+				border-left: 4px solid $small;
+				
+				@media #{$maxSmall}
+				{
+					a 
+					{
+						display: none;
+						width: 0;
+
+					}
+					i 
+					{
+						font-size: 1.5em;
+						margin-left: 20px;
+					}
+					&:hover
+					{
+						a 
+						{
+							position: relative;
+							left: 50px;
+							bottom: 40px;
+							width: 100px;
+							padding-top: 10px;
+							padding-bottom: 10px;
+							display: inline-block;
+							background-color:$small;
+
+						}
+					}
+
+				}
+				@media #{$maxmobile}
+				{
+					a
+					{
+						display: inline-block;
+						width: 100px;
+					}
+					&:hover
+					{
+						a 
+						{
+							position: none;
+							background-color: transparent;
+							padding: 0;
+							position: relative;
+							left: 0;
+							bottom: 0;
+						}
+					}
+				}
+				a 
+				{
+					text-decoration: none;
+					color: $white;
+					margin-left: 10px;
+					i 
+					{
+						margin-right: 20px;
+					}
+				}
+				&:hover
+				{
+					background-color: $small;
+					border-left: 4px solid $aqua;
+				}
+			}
+			.active
+			{
+				background: $small;
+				border-left:4px solid $aqua;
+			}
+		}
+		.dropdown 
+		{
+			display: none;
+			@media #{$maxmobile}
+			{
+				display: block;
+			}
+			.dropdown-menu
+				{
+					background-color: $small;
+					text-align: center;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					margin-left:70px;
+					li
+					{
+						a
+						{
+							color: $white;
+							&:focus,&:hover
+							{
+								color: $aqua;
+								background-color: transparent;
+								@include transition;
+							}
+						}
+
+					} 
+				}
+			.img 
+			{
+				display: block;
+				margin-bottom: 10px;
+				img 
+				{
+					padding-top: 0;
+					height: 60px;
+					width: 60px;
+					line-height: 60px;
+					display: inline-block;
+				}
+			}
+			.name 
+			{
+				display: block;
+				margin-left: 10px;
+				color: $white;
+				margin-bottom: 10px;
+				&:hover,&:focus 
+				{
+					color: $aqua;
+				}
+			}
+		} 
+
+	}
+
+/* start wallet section 
+************************/
+.wallet
+{
+	h1 
+	{
+		margin-bottom: 20px;
+	}
+
+	.card
+	{
+		background-color: $large;
+		padding: 20px 10px 0px 10px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		height: 170px;
+		.contain
+		{
+			display: block;
+		}
+		.left
+		{
+			float: left;
+			width: 55%;
+		}
+		.icon
+		{
+			background-color: $bitcoin;
+			color: $white;
+			height: 40px;
+			width: 40px;
+			line-height: 40px;
+			border-radius: 10px;
+			position: relative;
+			bottom: 15px;
+			display: inline-block;
+			i
+			{
+				font-size: 20px !important;
+			}
+
+		}
+		.ethereum
+		{
+			background-color: $ethereum;
+		}
+		.litecoin
+		{
+			background-color: $litecoin;
+		}
+		.icon::nth-child(2)
+		{
+			background-color: $ethereum;
+		}
+		.desc
+		{
+			margin-left: 10px;
+			display: inline-block;
+		}
+		.right
+		{
+			float: right;
+			width: 45%;
+			text-align: right;
+		}
+		.desc2
+		{
+			position: relative;
+			top: 30px;
+		}
+	}
+	.card1
+	{
+		border: 1px solid $aqua;
+		height: 170px;
+		padding-top: 50px;
+		margin-top: 20px;
+		.circle
+		{
+			@include lineargradient();
+			height: 40px;
+			width: 40px;
+			line-height: 40px;
+			border-radius: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+
+		}
+	}
+	.remodal 
+	{
+		background: $large !important;
+		color: $white !important;
+	}
+}
+.transactions
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.table1 {
+            padding: 30px 0px;
+            @media #{$maxmobile} {
+                overflow-x: scroll;
+            }
+            table {
+                thead {
+                    th {
+                        padding: 20px 20px;
+                        border: 0;
+                    }
+                    background-color: $large;
+                    border: 0;
+                }
+                tbody {
+                    td {
+                        padding: 20px 20px;
+                        border-top-color:$table;
+                    }
+                    background-color: $small;
+                }
+            }
+        }
+}
+// start styling calculator section 
+.calculator
+{
+	background: url(../images/7.jpeg) no-repeat fixed;
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 500px;
+	h1 
+	{
+		margin-bottom: 30px;
+
+	}
+	.cover
+	{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: $medium;
+		height: 100%;
+		width: 100%;
+		opacity: 0.98;
+	}
+	.form
+	{
+		margin: 50px auto;
+		form 
+		{
+			// margin-left: 17%;
+		}
+		.form-group
+		{
+			display: inline-block;
+			margin: 0 auto;
+			.input,.dropdown
+			{
+				display: inline-block;
+			}
+			.dropdown
+			{
+				.dropdown-menu
+				{
+					background-color: $small;
+					text-align: center;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					li
+					{
+						a
+						{
+							color: $white;
+							&:focus,&:hover
+							{
+								color: $aqua;
+								background-color: transparent;
+								@include transition;
+							}
+						}
+
+					} 
+				}
+			}
+			input 
+			{
+				background-color: $small;
+				height: 50px;
+				border: 0;
+				width: 250px;
+				outline: none;
+				border-radius: 0;
+				border-top-left-radius: 25px;
+				border-bottom-left-radius: 25px;
+				&:focus
+				{
+					box-shadow: none;
+				}
+			}
+			.btn-primary
+			{
+				background-color: $large;
+				opacity: 1;
+				height: 50px;
+				border: 0;
+				border-radius: 0;
+				position: relative;
+				right: 5px;
+				bottom: 1px;
+				border-top-right-radius: 25px;
+				border-bottom-right-radius: 25px;
+				width: 80px;
+				&:focus
+				{
+					outline: none;
+					box-shadow: none;
+				}
+			}
+		}
+		.form-group:nth-child(2)
+		{
+			margin-left: 50px;
+			@media #{$maxSmall}
+			{
+				margin-left: 20px;
+			}
+			@media #{$maxmobile}
+			{
+				margin-left: 0px;
+				margin-top: 40px;
+			}	
+		}
+		.after::after
+		{
+			content: '=';
+			position: relative;
+			font-size: 2em;
+			left: 25px;
+			@media #{$maxSmall}
+			{
+				left: 10px;
+			}
+		}
+		.btn-default
+		{
+			display: block;
+			margin: 0 auto;
+			margin-top: 40px;
+			border-radius: 50px;
+			height: 50px;
+			padding-left: 25px;
+			padding-right: 25px;
+			@include lineargradient();
+			border: 0;
+			color: $white;
+			font-size: 1.3em;
+			&:hover,&:focus
+			{
+				@include lineargradient1();
+				outline: none;
+				box-shadow: none;
+			}
+		}
+	}
+
+}
+
+
+}
+
+@import "variables";

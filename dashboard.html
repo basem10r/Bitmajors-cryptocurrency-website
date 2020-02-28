@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> BitMajors </title>
+    <!--     <link rel="stylesheet" href="css/font-awesome.min.css">
+ -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/coinicon.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href=" css/owl.theme.default.min.css">
+    <link rel="stylesheet" href=" css/owl.theme.default.min.css">
+    <link rel="stylesheet" href=" css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="dashboard">
+    <header class="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="default"><i class="fa fa-bars"></i></button>
+                    <a class="navbar-brand" href="#"><img class="img-responsive " src="images/logo1.png"></a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="navbar-form" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <!-- The Profile picture inserted via div class below, with shaping provided by Bootstrap -->
+                            <div class="img"><img class="img-circle img-responsive" src="images/3.jpg"></div>
+                            <span class="name">Basem mohamed</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="logout" href="#">Log out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--     <div class="container-fluid">
+ -->
+    <aside>
+        <nav class="sidenav main">
+            <div class="logo">
+                <a href="index.html"><img class="center-block img-responsive" src="images/logo.png"></a>
+                <a href="index.html"><img class="center-block img-responsive logo-icon" src="images/logo1.png"></a>
+                </div>
+                <ul class="list-group">
+                    <li class="dropdown text-center">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <!-- The Profile picture inserted via div class below, with shaping provided by Bootstrap -->
+                            <div class="img"><img class="img-circle img-responsive" src="images/3.jpg"></div>
+                            <span class="name">Basem mohamed <span class="caret"></span></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="logout" href="#">Log out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <ul class="icons text-center">
+                        <li class="not"><a href="#"><i class="fas fa-bell"></i></a></li>
+                        <li class="not"><a href="#"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                    <li class="list-group-item active">
+                        <i class="fas fa-suitcase"></i><a href="dashboard.html"> Wallet</a></li>
+                    <li class="list-group-item">
+                        <i class="fas fa-chart-line"></i><a href="transactions.html"> Transactions <span class="arrow"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-dollar-sign "></i><a href="contracts.html"> contracts <span class="arrow"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-question "></i><a href="support.html"> Support <span class="arrow"></span></a>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-cog"></i><a href="settings.html"> Settings
+          </a>
+                    </li>
+                </ul>
+        </nav>
+    </aside>
+    <main>
+        <div class="content">
+            <section class="wallet">
+                <div class="container-fluid">
+                    <h1>Wallet</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="card">
+                                <div class="left">
+                                    <div class="icon text-center"><i class="ci ci-btc"></i></div>
+                                    <div class="desc">
+                                        <h5>Bitcoin</h5>
+                                        <p>BTC</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <h5>0.356 BTC</h5>
+                                    <p>2658 USD</p>
+                                </div>
+                                <div class="desc2">
+                                    <p class="pull-left">1 BTC 8,837.88 USD</p>
+                                    <span class="pull-right">+263$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="card">
+                                <div class="left">
+                                    <div class="icon ethereum text-center"><i class="ci ci-eth"></i></div>
+                                    <div class="desc">
+                                        <h5>Ethereum</h5>
+                                        <p>ETH</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <h5>0.356 ETH</h5>
+                                    <p>2658 USD</p>
+                                </div>
+                                <div class="desc2">
+                                    <p class="pull-left">1 ETH 8,837.88 USD</p>
+                                    <span class="pull-right">+263$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="card">
+                                <div class="left">
+                                    <div class="icon litecoin text-center"><i class="ci ci-ltc"></i></div>
+                                    <div class="desc">
+                                        <h5>Litecoin</h5>
+                                        <p>LTC</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <h5>0.356 LTC</h5>
+                                    <p>2658 USD</p>
+                                </div>
+                                <div class="desc2">
+                                    <p class="pull-left">1 LTC 8,837.88 USD</p>
+                                    <span class="pull-right">+263$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="card1 text-center">
+                                <div data-remodal-target="modal" class="circle">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <h5>Add New Wallet</h5>
+                            </div>
+                        </div>
+                        <div class="remodal" data-remodal-id="modal">
+                            <button data-remodal-action="close" class="remodal-close"></button>
+                            <div class="circle text-center">
+                                <i class="fas fa-suitcase"></i>
+                            </div>
+                            <h2>Add New Wallet</h2>
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <input class="form-control input-lg">
+                                </div>
+                                <div class="form-group">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">USD
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">USD</a></li>
+                                        <li><a href="#">EUR</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                                
+
+                        </form>
+                        <button class="btn btn-default btn-lg text-center " data-remodal-action="confirm">Submit</button>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <section class="transactions">
+            <div class="container-fluid">
+                <h1>Transactions</h1>
+                <div class="table1">
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th>Order Created</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Hashpower</th>
+                                <th>Type</th>
+                                <th>Price</th>
+                                <th>Order Statues</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Felkon</td>
+                                <td>6th July 2018</td>
+                                <td>9th July 2018</td>
+                                <td>200 Th/s</td>
+                                <td>Mining</td>
+                                <td>$500.00 USD</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr>
+                                <td>Felkon</td>
+                                <td>6th July 2018</td>
+                                <td>9th July 2018</td>
+                                <td>200 Th/s</td>
+                                <td>Mining</td>
+                                <td>$500.00 USD</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr>
+                                <td>Felkon</td>
+                                <td>6th July 2018</td>
+                                <td>9th July 2018</td>
+                                <td>200 Th/s</td>
+                                <td>Mining</td>
+                                <td>$500.00 USD</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr>
+                                <td>Felkon</td>
+                                <td>6th July 2018</td>
+                                <td>9th July 2018</td>
+                                <td>200 Th/s</td>
+                                <td>Mining</td>
+                                <td>$500.00 USD</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr>
+                                <td>Felkon</td>
+                                <td>6th July 2018</td>
+                                <td>9th July 2018</td>
+                                <td>200 Th/s</td>
+                                <td>Mining</td>
+                                <td>$500.00 USD</td>
+                                <td>Pending</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- start calculator section -->
+        <section class="calculator">
+            <div class="cover">
+                <div class="container-fluid text-center">
+                    <h1>Buy And Sell Coins At BitMajor<br>With Out Aditional Fees</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
+                    </p>
+                    <div class="form">
+                        <form>
+                            <div class="form-group after">
+                                <div class="input"><input class="form-control"></div>
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">BTC
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">BTC</a></li>
+                                        <li><a href="#">ETH</a></li>
+                                        <li><a href="#">LTC</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--                         <div class="equal">=</div>
+ -->
+                            <div class="form-group ">
+                                <div class="input"><input class="form-control"></div>
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">USD
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">USD</a></li>
+                                        <li><a href="#">EUR</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn btn-default text-center">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <!-- </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/metisMenu.min.js"></script>
+    <script src="js/remodal.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+</body>
+
+</html>

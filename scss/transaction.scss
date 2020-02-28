@@ -1,0 +1,111 @@
+#dashboard
+{
+	.datepicker.dropdown-menu
+	{
+		background-color: $small;
+		color: $white;
+		td,th 
+		{
+		    @include transition();
+			&:hover
+			{
+				color: $white;
+			    @include lineargradient();
+			}
+		}
+	}
+	.datepicker-dropdown:after
+	{
+		border-bottom-color: $small;
+	}
+.transmain
+{
+	
+	.transform
+	{
+		margin-top: 50px;
+		.search-group
+		{
+			background-color: $large;
+			height: 50px;
+			position: relative;
+		}
+		.form-control
+		{
+			color: $white;
+		}
+		.form-group
+		{
+
+			.input,.search
+			{
+				display: inline-block;
+			}
+
+			.dropdown
+			{
+				.dropdown-menu
+				{
+					background-color: $small;
+					text-align: center;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					li
+					{
+						a
+						{
+							color: $white;
+							&:focus,&:hover
+							{
+								color: $aqua;
+								background-color: transparent;
+								@include transition;
+							}
+						}
+
+					} 
+				}
+				.btn-primary
+				{
+					background-color: $large;
+					height: 50px;
+					border: 0;
+					padding-left: 25px;
+					padding-right: 25px;
+				}
+			}
+			input,button
+			{
+				&:active
+				{
+					outline: none;
+					box-shadow: none;
+				}
+			}
+			input 
+			{
+				background-color: $large;
+				height: 50px;
+				border: 0;
+				&:focus
+				{
+					outline: none;
+					box-shadow: none;
+				}
+			}
+							@include placeholder($white);
+
+			.btn-default
+			{
+				background-color: transparent;
+				color:$aqua;
+				border: 0;
+				position: absolute;
+				right: 10px;
+				top: 10px;
+			}
+			
+		}
+	}
+}
+}

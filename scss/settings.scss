@@ -1,0 +1,206 @@
+.tabs1
+{
+	.tab-content
+	{
+		.card
+		{
+			margin-top: 50px;
+			.camera,.desc,.button
+			{
+				display: inline-block;
+				margin-right: 40px;
+			}
+			.camera
+			{
+				height: 120px;
+				width: 120px;
+				line-height: 120px;
+				border: 2px solid $aqua;
+				cursor: pointer;
+				.circle
+				{
+					@include lineargradient();
+					color: $white;
+					height: 50px;
+					width: 50px;
+					line-height: 50px;
+					border-radius: 50%;
+					margin: 0 auto;
+					margin-top: 35px;
+				}
+			}
+			.button
+			{
+				.btn-success
+				{
+					@include lineargradient();
+					border: 0;
+					&:hover,&:focus
+					{
+						@include lineargradient1();
+						outline: none;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+
+	}
+
+}
+.form3
+{
+	margin-top: 50px;
+	.form-group
+	{
+		@include placeholder($white);
+		input 
+		{
+			background-color: $small;
+			border: 0;
+			border-radius: 5px;
+			color: $white;
+			&:hover,&:focus
+			{
+				outline: none;
+				box-shadow: none;
+			}
+		}
+		.dropdown
+			{
+				.dropdown-menu
+				{
+					background-color: $small;
+					text-align: center;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					li
+					{
+						a
+						{
+							color: $white;
+							&:focus,&:hover
+							{
+								color: $aqua;
+								background-color: transparent;
+								@include transition;
+							}
+						}
+
+					} 
+				}
+			}
+		.btn-primary
+		{
+			background-color: $small;
+			border: 0;
+			border-radius:5px;
+			text-align: left;
+			&:hover,&:focus
+			{
+				background: transparent;
+				outline: none;
+				box-shadow: none;
+				@include transition();
+			}
+		}
+	}
+	.btn-success
+	{
+		margin-top: 20px;
+		margin-bottom: 50px;         
+		@include lineargradient();
+		border: 0;
+		&:focus,&:hover
+		{
+			@include lineargradient1();
+		}
+	}
+}
+
+.wallets
+{
+	.table1
+	{
+		margin-top: 50px;
+		  table {
+                thead {
+                    th {
+                        padding: 20px 20px;
+                        border: 0;
+                    }
+                    background-color: $large;
+                    border: 0;
+                }
+                tbody {
+                    td {
+                        padding: 20px 20px 10px 20px;
+                        border-top-color:$table;
+                        line-height: 45px;
+                    }
+                    background-color: $small;
+                }
+            }
+		.table
+		{
+			font-size: 1.3em;
+			.coin 
+			{
+				background-color: $bitcoin;
+				height: 40px;
+				width: 40px;
+				line-height: 40px;
+				border-radius: 5px;
+				i 
+				{
+					font-size: 1.3em !important;
+				}
+
+			}
+			.ethereum
+			{
+				background-color: $ethereum;
+			}
+			.litecoin
+			{
+				background-color: $litecoin;
+			}
+			.garpage
+			{
+				i 
+				{
+					color: $aqua;
+				}
+			}
+		}
+		.buttons
+		{
+			.btn-success
+			{
+				border: 0;
+				@include lineargradient();
+				&:hover,&:focus
+				{
+					outline: none;
+					box-shadow: none;
+					@include lineargradient1();
+					
+				}
+			}
+			.btn-primary
+			{
+				border: 2px solid $white;
+				background-color: transparent;
+				color: $white;
+				&:hover,&:focus
+				{
+					border-color: $gray;
+					color: $gray;
+					@include transition();
+					outline: none;
+					box-shadow: none;					
+				}
+			}
+		}
+	}
+}

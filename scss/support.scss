@@ -1,0 +1,135 @@
+
+dl.Zebra_Accordion 
+{
+	width: 100%;
+ 	margin-top: 50px;
+}
+ 
+/* the collapsed titles */
+dl.Zebra_Accordion dt 
+{
+ 	background: $large;
+ 	color: $white;
+ 	font-weight: bold; 
+ 	font-size: 1.4em;
+ 	padding: 20px; 
+ }
+ 
+/* the expanded titles */
+dl.Zebra_Accordion dt.Zebra_Accordion_Expanded 
+{
+
+}
+ 
+/* the content */
+dl.Zebra_Accordion dd 
+{
+ 	background: $small; 
+ 	padding: 25px; 
+ 	margin: 1px 0; 
+ 	font-size: 1.3em;
+ }
+
+.Zebra_Accordion dt:before {
+    content: "+";
+    margin-right: 10px;
+    color:$aqua;
+ 
+}
+ 
+.Zebra_Accordion dt.Zebra_Accordion_Expanded:before {
+    content: "-";
+    margin-right: 10px;
+    color:$aqua;
+ 
+}
+
+.tabs
+{
+	.nav-tabs
+	{
+		border-bottom: 0;
+		li.active>a
+		{
+			background-color: transparent;
+			border: 0;
+			color: $white;
+			border-bottom: 2px solid $aqua;
+
+		}
+		li a 
+		{
+			color: $white;
+			&:hover
+			{
+				background-color: transparent;
+				border:0;
+				border-bottom: 2px solid $aqua;
+				@include transition;
+			}
+		}
+	}
+}
+
+.contact
+{
+	margin-top: 50px;
+	color: $white;
+	.contact1
+	{
+		background-color: $large;
+		padding: 15px;
+		padding-bottom: 20px;
+		.icon,.desc
+		{
+			display: inline-block;
+		}
+		.icon>i 
+		{
+			font-size: 1.3em;
+			color: $aqua;
+			margin-right: 10px;
+
+		}
+		.desc>h1
+		{
+			font-weight: 200;
+		}
+	}
+}
+
+.contactform
+{
+	margin-top: 50px;
+	.form-group
+	{
+		@include placeholder($white);
+		input,textarea
+		{
+			background-color: $small;
+			border: 0;
+			border-radius: 0px;
+			&:focus
+			{
+				outline: none;
+				box-shadow: none;
+			}
+		}
+		textarea
+		{
+			height: 170px;
+		}
+	}
+	.btn-success
+	{
+		@include lineargradient();
+		border: 0;
+		outline: none;
+		float: right;
+		&:hover,&:focus
+		{
+			@include lineargradient1();
+		}
+
+	}
+}

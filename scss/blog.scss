@@ -1,0 +1,62 @@
+.header2
+{
+	height: auto !important;
+	background-color: $large;
+	padding-bottom:100px;
+	h1
+	{
+		margin-top: 50px;
+	}
+	p 
+	{
+		margin-top: 20px;
+		font-size: 1.5em;
+		span 
+		{
+			color: $aqua;
+		}
+	} 
+}
+.blog1
+{
+	background: $medium !important;
+	.thumbnail
+	{
+		&:hover
+		{
+			box-shadow: none !important;
+		}
+		.image
+		{
+			position: relative;
+			.cover
+			{
+				height: 400px !important;
+
+			}
+			img 
+			{
+				height: 400px !important;
+
+			}
+		}
+		.caption
+		{
+			span 
+			{
+				font-size: 1.3em;
+				margin-right: 50px;
+			}
+		}
+	}
+}
+
+.contain 
+{     
+	margin-top: 100px; 
+}
+
+.ad1,.ad2
+{
+	margin-top: 30px;
+}

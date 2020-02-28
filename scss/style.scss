@@ -1,0 +1,755 @@
+/*
+
+@import
+$varcs
+@mixin & @include
+
+@extend
+
+grouping
+
+*/
+
+@import "general";
+
+
+
+
+/* CONTACT
+**********************************/
+
+@import "register";
+@import "dashboard";
+@import "contracts";
+@import "support";
+@import "settings";
+@import "archieve";
+@import "blog";
+@import "contact";
+@import "FAQ";
+/* START STYLING NAVBAR
+****************************/
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.header {
+    position: relative;
+}
+
+.navbar-header {
+    @media #{$maxSmall} {
+        height: 80px;
+    }
+}
+
+.navbar-inverse {
+    background: none;
+    border: none;
+    padding-top: 20px;
+
+    .navbar-toggle {
+        background-color: $white;
+        border: 1px solid $white;
+        border-color: $white;
+        border-radius: 4px;
+        margin-left: 15px;
+        margin-top: 15px;
+        padding: 9px 10px;
+        position: relative;
+        z-index: 15;
+
+        .icon-bar {
+            background-color: $medium;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+
+            .icon-bar {
+                background-color: $white;
+            }
+
+            @include transition();
+        }
+    }
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form
+{
+    @media #{$maxmobile}
+    {
+        background:$large;
+        padding-bottom:30px;
+    }
+}
+.navbar-collapse {
+    text-align: center;
+
+    @media #{$maxmobile} {
+        z-index: 6;
+        position: relative;
+
+        ul {
+            li {}
+        }
+
+        .login,
+        .register {
+            margin: 0 auto;
+            width: 100px;
+        }
+    }
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: $white;
+}
+
+.navbar-inverse .navbar-nav {
+    padding-top: 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    @media #{$maxSmall} {
+        padding-right: 0px;
+        font-size: 11px;
+    }
+
+    color: $white;
+    font-size: 16px;
+    @include transition();
+
+    &:hover {
+        color: rgba($white, 0.7);
+    }
+
+}
+
+.navbar-brand {
+    img {
+        width: 150px;
+        height: 40px;
+    }
+}
+
+.navbar-inverse .navbar-nav .register {
+    background-color: transparent;
+    border: 2px solid $white;
+    color: $white;
+    border-radius: 25px;
+    margin-top: 5px;
+    padding: 10px 20px 10px 20px;
+
+    &:hover {
+        background-color: $white;
+        color: $medium;
+    }
+
+}
+
+.navbar-inverse .navbar-nav .login {
+    @include lineargradient();
+    color: $white;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.2em;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 7px;
+
+    @media #{$minSmall} {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        @include lineargradient1();
+        @include transition();
+        color: $white;
+    }
+}
+
+
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    background: transparent;
+    margin-right: 10px;
+    border-radius: 15px;
+    color: $white;
+}
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+    background: none;
+}
+
+.affix {
+    background-color: $medium;
+    width: 100%;
+    height: 110px;
+    z-index: 6;
+    border: none;
+    padding-bottom: 20px;
+    @include transition();
+    @include shadow(0px, 0px, 45px, -10px, $black);
+
+    .navbar-inverse .navbar-nav {
+        padding-top: 0px;
+    }
+}
+
+
+
+
+
+
+/*START STYLING JUMPOTRON
+***************************/
+
+.shape {
+    position: absolute;
+}
+
+.shape1 {
+    position: absolute;
+    right: 0;
+
+    @media #{$maxmobile} {
+        display: none;
+    }
+}
+
+.hero-img {
+
+    img {
+        width: 900px;
+        margin: 0px auto;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+}
+
+.tron h1 {
+    @media #{$maxSmall} {
+        font-size: 3em;
+    }
+
+    @media #{$maxMobile} {
+        font-size: 2.5em;
+    }
+
+    margin-top: 70px;
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1.3em;
+}
+
+.tron p {
+    margin-top: 70px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+
+
+
+/************************************
+start styling coins section *********/
+
+.coins {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $large;
+
+    .item {
+        .circle {
+            height: 60px;
+            width: 60px;
+            background-color: $bitcoin;
+            line-height: 60px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .ethereum {
+            background-color: $ethereum;
+        }
+
+        .dash {
+            background-color: $dash;
+        }
+
+        .siacoin {
+            background-color: $siacoin;
+        }
+
+        .dogecoin {
+            background-color: $dogecoin;
+        }
+
+        .ripple {
+            background-color: $ripple;
+        }
+
+        .neo {
+            background-color: $neo;
+        }
+
+        .litecoin {
+            background-color: $litecoin;
+        }
+    }
+
+    .ci {
+        color: $white;
+        font-size: 30px !important;
+    }
+}
+
+
+
+
+
+
+/********************************************
+styling why choose us section****************/
+
+.choose {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .card {
+        @media #{$maxmobile} {
+            padding: 0 30px;
+        }
+
+        margin-top: 50px;
+
+        .img {
+            position: relative;
+            z-index: 3;
+        }
+
+        .card2 {
+            background-color: $small;
+            padding: 60px 30px 30px 30px;
+            position: relative;
+            top: -40px;
+            z-index: 1;
+        }
+    }
+
+    .btn-primary {
+        @include lineargradient();
+        border-radius: 25px;
+        margin: 0 auto;
+
+        &:hover {
+            @include lineargradient1();
+            @include transition();
+        }
+    }
+}
+
+
+
+
+
+/***********************************
+styling steps section*******************/
+
+.steps {
+    position: relative;
+
+    h1 {
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -o-hyphens: auto;
+        hyphens: auto;
+    }
+
+    img {
+        position: absolute;
+        top: 280px;
+
+        @media #{$maxmobile} {
+            display: none;
+        }
+    }
+
+    background:url(../images/steps.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: 100% 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .card {
+        @media #{$maxmobile} {
+            margin-top: 20px;
+        }
+
+        margin-top: 100px;
+        margin-bottom: 80px;
+
+
+        .icon {
+            height: 90px;
+            width: 90px;
+            line-height: 110px;
+            @include lineargradient();
+            border-radius: 50%;
+            margin: 0 auto;
+
+            i {
+                font-size: 2.7em;
+            }
+        }
+
+        &:hover {
+            .icon {
+                @include transition();
+                background: $white;
+
+                i {
+                    color: $aqua;
+                }
+            }
+        }
+    }
+}
+
+i.fa,
+i.fas {
+    font-family: "Font Awesome 5 Free" !important;
+}
+
+i.fab {
+    font-family: "Font Awesome 5 Brands" !important;
+}
+
+i.far {
+    font-family: "Font Awesome 5 free" !important;
+}
+
+
+
+/**************************************
+start styling price section***********/
+
+.price {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    p {
+        margin-bottom: 50px;
+    }
+    .table1
+    {
+        @include scale(1.2);
+        z-index:4;
+    }
+    .table {
+        position: relative;
+
+        .triangle {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        background-color: $medium;
+        margin-top: 80px;
+        padding: 20px 0px;
+        @include shadow(0px, 0px, 45px, -10px, $black);
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding: 0px 20px;
+
+            li {
+                background-color: transparent;
+                border: 0;
+                border-bottom: 1px solid $small;
+                padding: 10px 0px;
+            }
+
+            li:last-child {
+                border: 0;
+                border-bottom: 0;
+            }
+        }
+
+        .square {
+            background-color: $small;
+            padding: 15px 0px;
+            margin-bottom: 20px;
+
+            span {
+                font-size: 3.5em;
+            }
+        }
+
+        .btn-primary {
+            @include lineargradient();
+            border-radius: 25px;
+            padding: 10px 20px 10px 20px;
+            border: 0;
+
+            &:hover {
+                @include lineargradient1();
+                @include transition();
+            }
+        }
+    }
+
+    .vip {
+        @media #{$minMedium} {
+            position: relative;
+            z-index: 4;
+        }
+    }
+}
+
+.orders {
+    background: url(../images/background1.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .nav-tabs>li.active>a,
+    .nav-tabs>li.active>a:focus,
+    .nav-tabs>li.active>a:hover {
+        background-color: transparent;
+        color: $white;
+        border: 0;
+        border-bottom: 1px solid $aqua;
+        @include transition();
+    }
+
+    .nav-tabs {
+        border: 0;
+        margin: 0 auto;
+        margin-top: 30px;
+
+        li {
+            float: none;
+            display: inline-block;
+
+            a {
+                background-color: transparent;
+                color: $white;
+                border: 0;
+                text-align: center;
+                font-size: 1.3em;
+            }
+        }
+    }
+
+    .tab-content {
+        .table1 {
+            padding: 30px 0px;
+
+            @media #{$maxmobile} {
+                overflow-x: scroll;
+            }
+
+            table {
+                thead {
+                    th {
+                        padding: 20px 20px;
+                        border: 0;
+                    }
+
+                    background-color: $large;
+                    border: 0;
+                }
+
+                tbody {
+                    td {
+                        padding: 20px 20px;
+                    }
+
+                    background-color: $table;
+                }
+            }
+        }
+    }
+
+    .btn-primary {
+        @include lineargradient();
+        border-radius: 25px;
+        border: 0;
+        margin: 0 auto;
+
+        &:hover {
+            @include lineargradient1();
+            @include transition();
+        }
+    }
+}
+
+
+
+
+/**************************************
+styling blog section*******************/
+
+.blogs {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: $large;
+
+    .thumbnail {
+        @media #{$maxmobile} {
+            margin: 50px 50px;
+        }
+
+        @media #{$maxmobile} {
+            margin: 50px 20px;
+        }
+
+        background-color: $small;
+        border: 0;
+        padding:0;
+        margin-top: 50px;
+        color: $white;
+
+        .image {
+            img {
+                height: 200px;
+            }
+
+            .cover {
+                position: absolute;
+                width: 100%;
+                height: 200px;
+                background-color: $large;
+                opacity: 0.6;
+            }
+        }
+
+        .caption {
+            color: $white;
+            padding: 20px 20px 20px 20px;
+
+            .date {
+                color: $aqua;
+            }
+
+            .btn-primary {
+                background-color: transparent;
+                border: 0;
+                color: $aqua;
+                padding-left: 0;
+
+                &:hover {
+                    i {
+                        margin-left: 5px;
+                        @include transition();
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            @include shadow(0px, 0px, 45px, -10px, $black);
+            @include transition();
+        }
+    }
+}
+
+
+
+
+/*********************************
+styling foooter******************/
+
+footer {
+    position: relative;
+    background: url(../images/background2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    .logo {
+        img {
+            height: 40px;
+            width: 150px;
+        }
+    }
+
+    .cover {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+        background-color: $large;
+        opacity: 0.9;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .lis-group {
+        margin-top: 20px;
+    }
+
+    .list-group-item {
+        background-color: transparent;
+        border: 0;
+        padding-left: 0;
+        padding-top: 0px;
+        font-size: 1.5em;
+        a 
+        {
+            text-decoration:none;
+            color:$white;
+            &:hover
+            {
+                color:darken($white,20%);
+                @include transition();
+            }
+        }
+    }
+
+    img {
+        margin-top: 15px;
+    }
+
+    .icons {
+        margin-top: 80px;
+
+        .icon {
+            display: inline-block;
+            background-color: $white;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            color: $medium;
+            text-align: center;
+            font-size: 1.3em;
+            border-radius: 50%;
+            margin-right: 10px;
+
+            &:hover {
+                background-color: darken($white, 30%);
+                @include transition();
+            }
+        }
+    }
+}

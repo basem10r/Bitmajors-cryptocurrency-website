@@ -1,0 +1,212 @@
+@import "framework";
+@import "variables";
+body 
+{
+    font-family: 'karla', sans-serif;
+    background-color: $medium;
+     
+
+
+}
+ #index{
+  background-color: $medium;
+  backgound-size: cover;
+  color: $secColor;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+input,button
+{
+  &:focus
+  {
+    outline: none;
+    box-shadow: none;
+  }
+}
+h1,h2,h3,h4,h5,h6
+{
+  font-weight: bold;
+}
+.container
+{
+  @media #{$minSmall}
+  {
+    width: 750px;
+  }
+  @media #{$minMedium}
+  {
+    width: 970px;
+  }
+  @media #{$minLarge}
+  {
+    width: 1170px;
+  }
+}
+
+%main-background {
+  background: rgba(52, 131, 255, 0.75);
+  background: -webkit-linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%);
+  background: -o-linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%);
+  background: -moz-linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%);
+  background: linear-gradient(-45deg, rgba(205, 15, 216, 0.75) 0%, rgba(52, 131, 255, 0.75) 100%);
+}
+
+%main-color {
+  color: $mainColor;
+}
+
+
+@-webkit-keyframes pulseEffect
+{
+  FROM
+  {
+    transform: scale(0.5);
+    opacity: 0.4;
+  }
+  TO
+  {
+    transform:scale(2.6);
+    opacity: 0;
+
+  }
+
+}
+@-webkit-keyframes pulseEffect1
+{
+  FROM
+  {
+    transform: scale(0);
+    opacity: 0.6;
+  }
+  TO
+  {
+    transform:scale(2);
+    opacity: 0;
+
+  }
+
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  top: 0px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $large;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  @include lineargradient();
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.spinner {
+  margin: 250px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.cube1, .cube2 {
+  background-color: $aqua;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+.loading-screen
+{
+  background-color: $large;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99990999;
+
+}
